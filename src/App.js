@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import FunctionCounter from './components/FunctionCounter';
+import ClassCounter from './components/ClassCounter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-sky-50 to-rose-50 flex items-start justify-center py-14 px-6">
+        <div className="w-full max-w-5xl">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8">Assignment-2 Counter Application</h1>
+
+
+          <div className="flex flex-col md:flex-row gap-6 items-stretch justify-center">
+            <ClassCounter />
+            <FunctionCounter />
+          </div>
+        </div>
+      </div>
     </div>
+
   );
 }
 
