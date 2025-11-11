@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import FunctionCounter from './components/FunctionCounter';
 import ClassCounter from './components/ClassCounter';
-import TodoApp from "./components/TodoApp";
 
 function App() {
   return (
@@ -18,13 +17,6 @@ function App() {
           </div>
           
         </div>
-
-          <div className="w-full max-w-5xl">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8">Assignment-2 To-do List Application</h1>
-         <div className="flex flex-col md:flex-row gap-6 items-stretch justify-center">
-            <TodoApp />
-         </div>
-         </div>
       </div>
     </div>
 
